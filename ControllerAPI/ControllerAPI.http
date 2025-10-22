@@ -1,0 +1,8 @@
+@ControllerAPI_HostAddress = http://localhost:5052
+
+POST {{ControllerAPI_HostAddress}}/Order/
+Content-Type: application/json
+Accept: application/json
+{}
+
+###
