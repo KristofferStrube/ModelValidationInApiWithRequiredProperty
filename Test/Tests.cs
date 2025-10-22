@@ -18,8 +18,7 @@ public class Tests
         var content = await response.Content.ReadAsStringAsync();
 
         // Assert
-        // A Problem Details will include this link
-        Assert.That(content, Does.Contain("https://tools.ietf.org/html/rfc9110#section-15.5.1"));
+        Assert.That(content, Does.Contain("One or more validation errors occurred."));
     }
 
     [Test]
@@ -35,7 +34,6 @@ public class Tests
         var content = await response.Content.ReadAsStringAsync();
 
         // Assert
-        // A Problem Details will include this link
-        Assert.That(content, Does.Contain("https://tools.ietf.org/html/rfc9110#section-15.5.1"));
+        Assert.That(content, Does.Contain("One or more validation errors occurred."));
     }
 }
